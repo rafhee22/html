@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home,
+  .login,
+  .minuman,
+  .kategori,
+  .terima {
+    background-color: #4c586f;
+    font-family: "Baloo 2", cursive;
+  }
+
+
+  
+  @media screen and (min-width: 768px) {
+    .no-scroll {
+      overflow: auto;
+    }
+  
+    .home-btn {
+      visibility: hidden;
+    }
+  
+    .second-header {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      padding: 1rem;
+      background: #3e3e3b;
+      transition: all 0.5s ease-in-out;
+    }
+  
+    .nav {
+      visibility: visible;
+    }
+  
+    .nav .home-nav {
+      display: block;
+      transform: translateY(0);
+      height: 100%;
+      text-align: right;
+    }
+  
+    .nav .home-nav__item {
+      display: inline;
+    }
+  
+    .nav .home-nav__link {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .nav .logo {
+    font-family: "Marck Script", cursive;
+    float: left;
+    font-size: 1.5rem;
+    color: #a2a2a2;
+  }
+  
+  .nav .sign-in,
+  .nav .sign-up {
+    font-size: 1rem;
+  }
+  
+  .nav .sign-in {
+    margin-right: 0rem;
+  }
+  
+  .nav .sign-in.active,
+  .nav .sign-up.active {
+    color: #b66f2d;
+  }
+  
+  .nav #slash {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+  
+  .nav ul li {
+    display: inline;
+    font-family: "Baloo 2", cursive;
+  }
+  
+  .nav a {
+    outline: none;
+    color: #cbc5c1;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .nav a:hover {
+    color: #b66f2d;
+  }
+  
+  header .nav img {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-nav__item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .home-nav__item-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+  }
+  
+  .home-nav__item-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .home-nav__item:hover .home-nav__item-content {
+    display: block;
+  }
+  
+  /* isi home */
+  
+  .home {
+    font-family: "Baloo 2", cursive;
+  }
+  
+  .home .pic-area {
+    height: 100vh;
+    padding-top: 35vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: left;
+    font-family: "Marck Script", cursive;
+    color: #fff;
+  }
+  
+  .home .pic-area h1,
+  .home .pic-area h2,
+  .home .pic-area h3 {
+    font-weight: 800;
+  }
+  
+  .home .pic-area h1 {
+    font-size: 80px;
+  }
+  
+  .home .pic-area h2 {
+    font-size: 36px;
+  }
+  
+  .home .pic-area h3 {
+    font-size: 24px;
+  }
+  
+  .home .pic-area .pic-area-text {
+    padding: 1rem;
+    background: rgba(71, 71, 71, 0.2);
+  }
+
+  /* promo */
+  
+  .home .main-area h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .home .main-area p {
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20%;
+  }
+  
+  .home .main-area .section-area .section-A {
+    padding: 3rem 0;
+    color: white;
+    position: 50%;
+  }
+  
+  .home .main-area .section-area .section-B {
+    padding: 3rem 0;
+    color: white;
+  }
+  
+  .home .main-area .section-area .section-C {
+    padding: 3rem 0;
+    color: white;
+  }
+  
+  .home .main-area .section-area .box-img img {
+    padding: 0 10%;
+    width: 100%;
+    height: auto;
+  }
+  
+  .home .main-area .box-text {
+    margin: 5% 0% 0 0%;
+    background: #3e3e3b;
+  }
+  
+  .home .main-area .section-area .box-text {
+    position: absolute;
+    margin: 20% 10% 0 10%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo-first {
+    color: #4c586f;
+    font-size: 50%;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+  }
+  
+  .logo-last {
+    color: #834C2D;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #252525, -1px 1px 0 #252525, 1px 1px 0 #252525;
+  }
+
+  /*css login*/
+  
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login .teks h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login .lebel {
+    margin-top: 20px;
+  }
+  
+  .login form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login form input[type="text"],
+  .login form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login form input[type="submit"]:hover {
+    background: #45a049;
+  }
+
+  /*css minuman*/
+  
+  .minuman {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .img-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .box__btns {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .box__btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  h2,
+  h3 {
+    margin: 10px 0;
+  }
+
+  /*keranjang*/
+
+  .kategori {
+    margin-bottom: 10px;
+  }
+  
+  .kategori h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .kategori .keranjang {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .kategori .box {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .kategori .box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .kategori .box h2 {
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: -30px;
+  }
+  
+  .kategori .box h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .kategori .box button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .kategori .box button:hover {
+    background-color: #d32f2f;
+  }
+
+  .total {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .total h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .total h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .total a button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .total a button:hover {
+    background-color: #45a049;
+  }
+
+
+  
+ 
+  /* css footbar */
+
+footer .copyright{
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  footer {
+    background-color: #3e3e3b;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #999999;
+  }
+  
+  .box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .img-container {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .box__btns {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .box__btns:hover {
+    opacity: 1;
+  }
+
+  .box__btn {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .form-number {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50px;
+    margin-right: -4px;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+  }
+
+/*terima kasih*/
+
+  
+  body {
+    background-image: url("nama_gambar.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .terima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .terima h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .terima p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  .terima a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  .terima a button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .terima a button:hover {
+    background-color: #45a049;
+  }
+
+
